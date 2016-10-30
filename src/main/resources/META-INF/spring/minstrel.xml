@@ -7,11 +7,11 @@
 		http://www.springframework.org/schema/beans 
       http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="knight" class="com.springCore.knights.BraveKnight">
+    <bean id="knight" class="com.springCore.knights.Knight.BraveKnight">
         <constructor-arg ref="quest"/>
     </bean>
 
-    <bean id="quest" class="com.springCore.knights.SlayDragonQuest">
+    <bean id="quest" class="com.springCore.knights.Quest.SlayDragonQuest">
         <constructor-arg value="#{T(System).out}"/>
     </bean>
 

@@ -1,4 +1,6 @@
-package com.springCore.knights;
+package com.springCore.knights.Knight;
+
+import com.springCore.knights.Quest.RescueDamselQuest;
 
 public class DamselRescuingKnight implements Knight {
 

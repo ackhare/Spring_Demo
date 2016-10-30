@@ -1,4 +1,4 @@
-package com.springCore.knights;
+package com.springCore.knights.Knight;
 
 public interface Knight {
 

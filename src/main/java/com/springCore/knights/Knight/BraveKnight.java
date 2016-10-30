@@ -1,5 +1,7 @@
-package com.springCore.knights;
-  
+package com.springCore.knights.Knight;
+
+import com.springCore.knights.Quest.Quest;
+
 public class BraveKnight implements Knight {
 
   private Quest quest;

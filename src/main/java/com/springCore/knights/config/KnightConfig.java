@@ -1,9 +1,10 @@
 package com.springCore.knights.config;
 
-import com.springCore.knights.BraveKnight;
-import com.springCore.knights.Knight;
-import com.springCore.knights.Quest;
-import com.springCore.knights.SlayDragonQuest;
+
+import com.springCore.knights.Knight.BraveKnight;
+import com.springCore.knights.Knight.Knight;
+import com.springCore.knights.Quest.Quest;
+import com.springCore.knights.Quest.SlayDragonQuest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

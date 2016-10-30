@@ -1,4 +1,6 @@
-package com.springCore.knights;
+package com.springCore.knights.Quest;
+
+import com.springCore.knights.Quest.Quest;
 
 public class RescueDamselQuest implements Quest {
 

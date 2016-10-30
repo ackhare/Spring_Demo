@@ -1,5 +1,6 @@
 package com.springCore.knights;
 
+import com.springCore.knights.Knight.Knight;
 import org.springframework.context.support.
                    ClassPathXmlApplicationContext;
 

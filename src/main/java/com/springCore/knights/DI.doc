@@ -1,0 +1,49 @@
+﻿Two interfaces knight Quest
+
+ Knight has two classes BraveKnight, DamselRescuingKnight
+
+ Quest has two RescueDamselQuest and SlayDragonQuest
+
+ DI by constructor
+
+ BraveKnight has constructor where you can do DI by constructor , Here interface Quest is being injected
+ where Quest is argument and later implementation of Quest can be put  into it
+  DamselRescuingKnight has a constructor with no arg and here we create an instance of RescueDamselQuest in the
+  constructor
+AsK Hiten-->The significance of above two class and its diffrent constructor 
+
+  RescueDamselQuest simply implements Quest and implements its method but have no constructor
+
+ SlayDragonQuest has similar to  RescueDamselQuest but has a constructor with argument as printstream
+
+
+
+
+
+https://en.wikipedia.org/wiki/Aspect-oriented_programming
+In aspect and functional programming, advice describes a class of functions which modify other functions when the latter are run; it is a certain function, method or procedure that is to be applied at a given join point of a program.
+In computer science, a join point is a point in the control flow of a program. In aspect-oriented programming a set of join points is called a pointcut. A join point is a specification of when, in the corresponding main program, the aspect code should be executed.
+The join point is a point of execution in the base code where the advice specified in a corresponding pointcut is applied.
+Conceptually, a join point exists where a precondition for a command in Hoare logic makes an assertion parametric upon the joint and several advice supplied by the different concerns at that point in a generalized abstract process, the unified thing composed from its concrete aspects being the pointcut.
+
+
+
+
+Spring AOP (Aspect-oriented programming) framework is used to modularize cross-cutting concerns in aspects. Put it simple, it’s just an interceptor to intercept some processes, for example, when a method is execute, Spring AOP can hijack the executing method, and add extra functionality before or after the method execution.
+In Spring AOP, 4 type of advices are supported :
+Before advice – Run before the method execution
+After returning advice – Run after the method returns a result
+After throwing advice – Run after the method throws an exception
+Around advice – Run around the method execution, combine all three advices above.
+Following example show you how Spring AOP advice works.
+
+
+
+https://www.mkyong.com/spring/spring-aop-example-pointcut-advisor/
+
+In last Spring AOP advice examples, the entire methods of a class are intercepted automatically. But for most cases, you may just need a way to intercept only one or two methods, this is what ‘Pointcut’ come for. It allow you to intercept a method by it’s method name. In addition, a ‘Pointcut’ must be associated with an ‘Advisor’.
+In Spring AOP, comes with three very technical terms – Advices, Pointcut , Advisor, put it in unofficial way…
+Advice – Indicate the action to take either before or after the method execution.
+Pointcut – Indicate which method should be intercept, by method name or regular expression pattern.
+Advisor – Group ‘Advice’ and ‘Pointcut’ into a single unit, and pass it to a proxy factory object.
+
