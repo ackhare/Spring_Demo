@@ -1,4 +1,4 @@
-package com.springCore.autoWiring;
+package com.springCore.autoWiring.CDPlayer;
 
 public interface MediaPlayer {
 

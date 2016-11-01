@@ -1,5 +1,7 @@
 package com.springCore.autoWiring;
 
+import com.springCore.autoWiring.CDPlayer.MediaPlayer;
+import com.springCore.autoWiring.CompactDisc.CompactDisc;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.StandardOutputStreamLog;

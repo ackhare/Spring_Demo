@@ -1,5 +1,7 @@
 package com.springCore.autoWiring;
 
+import com.springCore.autoWiring.CDPlayer.CDPlayer;
+import com.springCore.autoWiring.CDPlayerConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
