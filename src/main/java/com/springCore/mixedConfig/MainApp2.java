@@ -9,7 +9,35 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainApp2 {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SoundSystemConfig.class);
-        CDPlayer player = context.getBean(CDPlayer.class);
+        /*
+        SoundSystemConfig calls CDPlayerConfig so again it requires a constructor argument
+        Now if we comment the @ImportResource then it will output
+
+Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles
+
+Now as we are not commenting it and argument has to be of type CompactDisc which is a constructor argumernt
+In the xml  cd-config.xml we have
+
+//<bean id="compactDisc"
+//        class="com.springCore.mixedConfig.CompactDisc.BlankDisc"
+//        c:_0="Sgt. Pepper's Lonely Hearts Club Band"
+//        c:_1="The Beatles">
+
+So we can see that BlankDisc is to be injected (passed) into constructor
+Now blankdisc needs 3 argument
+
+  public BlankDisc(String title, String artist, List<String> tracks) {
+    this.title = title;
+    this.artist = artist;
+    this.tracks = tracks;
+  }
+
+
+  these are passed via xml arguments
+
+         */
+
+       CDPlayer player = context.getBean(CDPlayer.class);
         player.play();
         context.close();
     }

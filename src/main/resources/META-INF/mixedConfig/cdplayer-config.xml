@@ -9,5 +9,5 @@
   <bean id="cdPlayer"
         class="com.springCore.mixedConfig.MediaPlayer.CDPlayer"
         c:cd-ref="compactDisc" />
-        
+
 </beans>

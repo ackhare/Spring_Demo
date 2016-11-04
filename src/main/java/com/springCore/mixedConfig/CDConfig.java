@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class CDConfig {
+  //here it is creating a bean which could be injected
+
   @Bean
   public CompactDisc compactDisc() {
     return new SgtPeppers();

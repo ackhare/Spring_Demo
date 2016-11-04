@@ -8,6 +8,20 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MainApp1 {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(CDPlayerConfig.class);
+        //will go to CDPlayerConfig which has a code as below
+        /*
+    @Bean
+    public CDPlayer cdPlayer(CompactDisc compactDisc) {
+        return new CDPlayer(compactDisc);
+    }
+
+    This alsos has a @import which imports CDConfig used in MainApp
+         */
+
+        /*
+        As it is a @configuration itr is liable for being used in configuration
+        Here an object of compact disc is required to run this to pass as a constructor whicomes from import in CDPlayerConfig
+         */
         CDPlayer player = context.getBean(CDPlayer.class);
         player.play();
         context.close();
