@@ -2,6 +2,7 @@ package com.springCore.mixedConfig;
 
 import static org.junit.Assert.assertEquals;
 
+import com.springCore.mixedConfig.MediaPlayer.MediaPlayer;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.StandardOutputStreamLog;

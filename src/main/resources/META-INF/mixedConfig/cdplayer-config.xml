@@ -7,7 +7,7 @@
   <bean class="com.springCore.mixedConfig.CDConfig" />
 
   <bean id="cdPlayer"
-        class="com.springCore.mixedConfig.CDPlayer"
+        class="com.springCore.mixedConfig.MediaPlayer.CDPlayer"
         c:cd-ref="compactDisc" />
         
 </beans>

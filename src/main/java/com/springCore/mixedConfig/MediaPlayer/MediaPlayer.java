@@ -1,4 +1,4 @@
-package com.springCore.mixedConfig;
+package com.springCore.mixedConfig.MediaPlayer;
 
 public interface MediaPlayer {
 

@@ -9,8 +9,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
  */
 public class MainApp {
    public static void main(String[] args) {
-      ApplicationContext context =
-             new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/DIByConstructor/Beans.xml");
+      ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/DIByConstructor/Beans.xml");
 
       TextEditor te = (TextEditor) context.getBean("textEditor");
 

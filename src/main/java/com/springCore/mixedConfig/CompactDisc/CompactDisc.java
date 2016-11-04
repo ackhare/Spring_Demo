@@ -1,4 +1,4 @@
-package com.springCore.mixedConfig;
+package com.springCore.mixedConfig.CompactDisc;
 
 public interface CompactDisc {
 

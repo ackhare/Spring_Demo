@@ -1,4 +1,4 @@
-package com.springCore.mixedConfig;
+package com.springCore.mixedConfig.CompactDisc;
 
 import java.util.List;
 

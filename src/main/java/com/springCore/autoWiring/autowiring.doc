@@ -1,0 +1,94 @@
+﻿The Spring container can autowire relationships between collaborating beans without using <constructor-arg> and <property> elements which helps cut down on the amount of XML configuration you write for a big Spring based application.
+
+Autowiring Modes:
+There are following autowiring modes which can be used to instruct Spring container to use autowiring for dependency injection. You use the autowire attribute of the <bean/> element to specify autowire mode for a bean definition.
+
+
+Mode
+Description
+no
+This is default setting which means no autowiring and you should use explicit bean reference for wiring. You have nothing to do special for this wiring. This is what you already have seen in Dependency Injection chapter.
+byName
+Autowiring by property name. Spring container looks at the properties of the beans on which autowire attribute is set to byName in the XML configuration file. It then tries to match and wire its properties with the beans defined by the same names in the configuration file.
+byType
+Autowiring by property datatype. Spring container looks at the properties of the beans on which autowire attribute is set to byType in the XML configuration file. It then tries to match and wire a property if its type matches with exactly one of the beans name in configuration file. If more than one such beans exists, a fatal exception is thrown.
+constructor
+Similar to byType, but type applies to constructor arguments. If there is not exactly one bean of the constructor argument type in the container, a fatal error is raised.
+autodetect
+Spring first tries to wire using autowire by constructor, if it does not work, Spring tries to autowire by byType.
+
+You can use byType or constructor autowiring mode to wire arrays and other typed-collections.
+
+Limitations with autowiring:
+Autowiring works best when it is used consistently across a project. If autowiring is not used in general, it might be confusing to developers to use it to wire only one or two bean definitions. Though, autowiring can significantly reduce the need to specify properties or constructor arguments but you should consider the limitations and disadvantages of autowiring before using them.
+Limitations
+Description
+Overriding possibility
+You can still specify dependencies using <constructor-arg> and <property> settings which will always override autowiring.
+Primitive data types
+You cannot autowire so-called simple properties such as primitives, Strings, and Classes.
+Confusing nature
+Autowiring is less exact than explicit wiring, so if possible prefer using explict wiring.
+
+
+
+
+
+
+
+http://stackoverflow.com/questions/19414734/understanding-spring-autowired-usage
+
+
+public class SimpleMovieLister {
+
+    private MovieFinder movieFinder;
+
+    @Autowired
+    public void setMovieFinder(MovieFinder movieFinder) {
+        this.movieFinder = movieFinder;
+    }
+
+    // ...
+}
+
+
+
+The @Autowired annotation allows you to skip configurations elsewhere of what to inject and just does it for you. Assuming your package is com.mycompany.movies you have to put this tag in your XML (application context file):
+
+<context:component-scan base-package="com.mycompany.movies" />
+
+This tag will do an auto-scanning. Assuming each class that has to become a bean is annotated with a correct annotation like @Component (for simple bean) or @Controller (for a servlet control) or @Repository (for DAO classes) and these classes are somewhere under the package com.mycompany.movies, Spring will find all of these and create a bean for each one. This is done in 2 scans of the classes - the first time it just searches for classes that need to become a bean and maps the injections it needs to be doing, and on the second scan it injects the beans. Of course, you can define your beans in the more traditional XML file or with a @Configuration class (or any combination of the three).
+
+The @Autowired annotation tells Spring where an injection needs to occur. If you put it on a method setMovieFinder it understands (by the prefix set + the @Autowired annotation) that a bean needs to be injected. In the second scan, Spring searches for a bean of type MovieFinder, and if it finds such bean, it injects it to this method. If it finds two such beans you will get an Exception. To avoid the Exception, you can use the @Qualifier annotation and tell it which of the two beans to inject in the following manner:
+@Qualifier("redBean")
+class Red implements Color {
+   // Class code here
+}
+
+@Qualifier("blueBean")
+class Blue implements Color {
+   // Class code here
+}
+
+
+Or if you prefer to declare the beans in your XML, it would look something like this:
+<bean id="redBean" class="com.mycompany.movies.Red"/>
+
+<bean id="blueBean" class="com.mycompany.movies.Blue"/>
+In the @Autowired declaration, you need to also add the @Qualifier to tell which of the two color beans to inject:
+@Autowired
+@Qualifier("redBean")
+public void setColor(Color color) {
+  this.color = color;
+}
+If you don't want to use two annotations (the @Autowired and @Qualifier) you can use @Resource to combine these two:
+@Resource(name="redBean")
+public void setColor(Color color) {
+  this.color = color;
+}
+
+I'll just add two more comments:
+1. Good practice would be to use @Inject instead of @Autowired because it is not Spring-specific and is part of the JSR-330 standard. 
+2. Another good practice would be to put the @Inject / @Autowired on a constructor instead of a method. If you put it on a constructor, you can validate that the injected beans are not null and fail fast when you try to start the application and avoid a NullPointerException when you need to actually use the bean. 
+So, to sum it up: The @Autowired annotation spares you the need to do the wiring by yourself in the XML file (or any other way) and just finds for you what needs to be injected where, and does that for you.
+

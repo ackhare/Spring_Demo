@@ -6,7 +6,7 @@ import com.springCore.xmlConfig.MediaPlayer;
 
 public class CDPlayer implements MediaPlayer {
   private CompactDisc compactDisc;
-
+//here Compact disc is to be injected
   @Autowired
   public void setCompactDisc(CompactDisc compactDisc) {
     this.compactDisc = compactDisc;

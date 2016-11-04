@@ -1,0 +1,19 @@
+https://www.quora.com/What-are-the-difference-between-p-namespace-and-c-namespace-in-Spring-framework-of-Java
+
+P-namespace:in spring 3.0"P-namespace"is introduced to perform setter injection configuration without using the lenthy
+<property> tag it allows to place attribute directly  in <bean>tag
+
+C-namespace:    similarly "C-namespace" is introduced in spring 3.1.1  version for constructor injection by avoiding the
+lenthy <constructor-arg> tag
+
+
+As we know that in spring we use dependency injection using parameters-based dependency injection (p namespace) and
+constructor-based dependency injection (c namespace)  we use these namespace based upon our dependency injection.
+
+p-namesapce (Parameter namespace) p-namespace simplifies the setter-based dependency injection code by enabling you to
+use the parameters to be injected as attributes of bean definition instead of the nested <property> elements.
+
+
+c-namespace (Constructor namespace) c-namespace is similar to p-namespace but used  with constructor-based dependency
+injection code. It simplifies the  constructor-based injection code by enabling you to use the constructor  arguments as
+attributes of bean definition rather than the nested <constructor-arg> elements.
