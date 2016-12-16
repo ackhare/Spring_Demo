@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <!--Following is the configuration file Beans.xml where we defined "helloWorld" bean which has -->
+    <!--two properties message1 and-->
+    <!--message2. -->
+        <bean id="helloWorld" class="com.springCore.SpringInheritance.HelloWorld">
+            <property name="message1" value="Hello World!"/>
+            <property name="message2" value="Hello Second World!"/>
+        </bean>
+        <!--
+Next "helloIndia" bean has been defined as a child of "helloWorld" bean by using parent attribute.
+The child bean inherits message2 property as is, and
+overrides message1 property and introduces one more property message3.-->
+    <bean id="helloIndia" class="com.springCore.SpringInheritance.HelloIndia" parent="helloWorld">
+        <property name="message1" value="Hello India!"/>
+        <property name="message3" value="Namaste India!"/>
+    </bean>
+
+</beans>

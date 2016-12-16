@@ -1,4 +1,4 @@
-package com.springCore.DIByConstructor;
+package com.springCore.DIfromTutorialPoint.DIByConstructor;
 
 /**
  * Created by chetan on 30/10/16.

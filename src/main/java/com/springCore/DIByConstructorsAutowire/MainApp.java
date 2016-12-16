@@ -1,4 +1,4 @@
-package com.springCore.DIBySetter;
+package com.springCore.DIByConstructorsAutowire;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 

@@ -1,0 +1,19 @@
+This is very basic example of implementing BeanPostProcessor, which prints a bean name before and after initialization
+of any bean. You can implement more complex logic before and after instantiating a bean because you have access on bean
+object inside both the post processor methods.
+
+
+
+Output
+
+/*
+log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+BeforeInitialization : helloWorld
+Bean is going through init.
+AfterInitialization : helloWorld
+Your Message : Hello World!
+Bean will destroy now.
+
+Process finished with exit code 0
+*/

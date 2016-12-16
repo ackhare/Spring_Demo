@@ -1,4 +1,4 @@
-package com.springCore.DIBySetter;
+package com.springCore.DIfromTutorialPoint.DIBySetter;
 
 /**
  * Created by chetan on 30/10/16.

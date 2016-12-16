@@ -1,7 +1,6 @@
-package com.springCore.DIByConstructor;
+package com.springCore.DIfromTutorialPoint.DIByConstructor;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /**
