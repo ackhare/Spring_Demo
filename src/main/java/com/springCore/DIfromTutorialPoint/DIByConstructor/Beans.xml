@@ -6,7 +6,9 @@
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
    <!-- Definition for textEditor bean -->
-   //This mens
+   <!--This means that the constructor of TextEditor will have a argument in
+   form of spell checker which will be injected later-->
+
    <bean id="textEditor" class="com.springCore.DIfromTutorialPoint.DIByConstructor.TextEditor">
       <constructor-arg ref="spellChecker"/>
    </bean>

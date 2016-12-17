@@ -1,4 +1,5 @@
-package com.springCore.DIfromTutorialPoint.DIBySetter;
+package com.springCore.DIfromTutorialPoint.InjectingInnerBean;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
@@ -7,8 +8,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
  */
 public class MainApp {
    public static void main(String[] args) {
-      ApplicationContext context =
-             new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/DIfromTutorialPoint/DIBySetter/Beans.xml");
+      ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/DIfromTutorialPoint/InjectingInnerBean/Beans.xml");
 
       TextEditor te = (TextEditor) context.getBean("textEditor");
 //here it will go to xml and check for spellcheck instance
@@ -18,5 +18,5 @@ public class MainApp {
 /*
 Inside SpellChecker constructor.
 Inside setSpellChecker.
-Inside checkSpelling.
+Inside checkSpelling.]
  */

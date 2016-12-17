@@ -7,8 +7,8 @@
 
    <!-- Definition for textEditor bean -->
    <bean id="textEditor" class="com.springCore.DIfromTutorialPoint.DIBySetter.TextEditor">
-      <!--<property name="spellChecker" ref="spellChecker"/>-->
-      <!--&lt;!&ndash;referring to the below bean&ndash;&gt;-->
+      <property name="spellChecker" ref="spellChecker"/>
+      <!--referring to the below bean-->
    </bean>
 
    <!-- Definition for spellChecker bean -->
