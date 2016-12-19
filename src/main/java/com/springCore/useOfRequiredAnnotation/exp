@@ -1,0 +1,2 @@
+If we remove this @required for say setName and remove name from xml it will work but with required annotation it forces
+us to place both name and age in xml
