@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop
+      http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--//This just extends the knight.xml-->
+    <bean id="knight" class="com.springCore.knights.Knight.BraveKnight">
+        <constructor-arg ref="quest"/>
+    </bean>
+
+    <bean id="quest" class="com.springCore.knights.Quest.SlayDragonQuest">
+        <constructor-arg value="#{T(System).out}"/>
+    </bean>
+
+    <bean id="minstrel" class="com.springCore.knights.Minstrel">
+        <constructor-arg value="#{T(System).out}"/>
+    </bean>
+    <!--//join point-&ndash;&gt;This represents a point in your application where you can plug-in AOP aspect.-->
+    <!--//This is a set of one or more joinpoints where an advice should be executed.-->
+
+    <aop:config>
+
+        <!--//aspect&ndash;&gt; A module which has a set of APIs providing cross-cutting requirements.-->
+        <aop:aspect ref="minstrel">
+            <!--//You can specify pointcuts using expressions or patterns as we will see in our AOP examples.-->
+            <aop:pointcut id="embark"
+                          expression="execution(* *.embarkOnQuest(..))"/>
+            <!--//so method singBeforeQuest will fire before embarkOnQuest-->
+            <aop:before pointcut-ref="embark"
+                        method="singBeforeQuest"/>
+            <!--//so method singBeforeQuest will fire after embarkOnQuest-->
+            <aop:after pointcut-ref="embark"
+                       method="singAfterQuest"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

@@ -15,10 +15,14 @@ repositories {
 dependencies {
     compile("org.springframework:spring-context:${springVersion}")
     compile("org.aspectj:aspectjweaver:${aspectJVersion}")
+    compile("mysql:mysql-connector-java:5.1.13")
     compile("log4j:log4j:${log4jVersion}")
     compile("org.springframework:spring-jdbc:${springVersion}")
     compile("com.h2database:h2:${h2Version}")
-
+    //below two dependencies required for aop
+    compile group: 'aopalliance', name: 'aopalliance', version: '1.0'
+    compile group: 'org.aspectj', name: 'aspectjrt', version: '1.8.9'
+    runtime files("/home/chetan/Downloads/Spring-Core-master/log4j.properties")
     testCompile("junit:junit:${junitVersion}")
     testCompile("org.mockito:mockito-core:${mockitoVersion}")
     testCompile("org.springframework:spring-test:${springVersion}")
@@ -27,5 +31,5 @@ dependencies {
 
 jar {
     baseName = 'springCore'
-    version =  '0.0.1-SNAPSHOT'
+    version = '0.0.1-SNAPSHOT'
 }
