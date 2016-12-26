@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+    <!--Put this “context:component” in bean configuration file, it means, enable auto scanning feature
+    in Spring. The-->
+    <!--base-package is indicate where are your components stored, Spring will scan this folder
+    and find out the bean (annotated-->
+    <!--with @Component) and register it in Spring container.-->
+    <context:component-scan base-package="com.springCore.FromXmlToNoXml.PartialXmlWithComponentAnnotation" />
+
+</beans>

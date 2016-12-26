@@ -11,7 +11,7 @@
 <!--base-package is indicate where are your components stored, Spring will scan this folder
 and find out the bean (annotated-->
 <!--with @Component) and register it in Spring container.-->
-	<context:component-scan base-package="com.springCore.ComponentViaMkYoung.autoscanningWithComponent" />
+	<!--<context:component-scan base-package="com.springCore.ComponentViaMkYoung.autoscanningWithComponent" />-->
 	<!--<bean id="customerService" class="com.springCore.ComponentViaMkYoung.XmlComponnetWay.service.CustomerService">-->
 		<!--&lt;!&ndash;this is wht we need to inject &ndash;&gt;-->
         <!--<property name="customerDAO" ref="customerDAO" />-->

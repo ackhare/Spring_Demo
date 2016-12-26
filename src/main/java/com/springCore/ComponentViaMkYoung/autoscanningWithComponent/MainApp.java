@@ -2,6 +2,7 @@ package com.springCore.ComponentViaMkYoung.autoscanningWithComponent;
 
 import com.springCore.ComponentViaMkYoung.autoscanningWithComponent.service.CustomerService;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /**
@@ -12,7 +13,8 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class MainApp {
     public static void main(String[] args) {
         ApplicationContext context =
-                new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/ComponentViaMkYoung/autoscanningWithComponent/Bean.xml");
+                new AnnotationConfigApplicationContext(Config.class);
+
 
 
         CustomerService cust = (CustomerService) context.getBean("customerService");
