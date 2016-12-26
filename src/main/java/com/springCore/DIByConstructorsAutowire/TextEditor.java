@@ -2,10 +2,12 @@ package com.springCore.DIByConstructorsAutowire;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by chetan on 30/10/16.
  */
+@Component
 public class TextEditor {
    private SpellChecker spellChecker;
 /*

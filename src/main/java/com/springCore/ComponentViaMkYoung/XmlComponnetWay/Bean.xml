@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="customerService" class="com.springCore.ComponentViaMkYoung.XmlComponnetWay.service.CustomerService">
+		<!--this is wht we need to inject -->
+        <property name="customerDAO" ref="customerDAO" />
+	</bean>
+
+	<bean id="customerDAO" class="com.springCore.ComponentViaMkYoung.XmlComponnetWay.dao.CustomerDAO" />
+
+</beans>

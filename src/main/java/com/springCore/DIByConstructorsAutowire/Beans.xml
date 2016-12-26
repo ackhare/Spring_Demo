@@ -12,8 +12,8 @@
 
    <!-- Definition for textEditor bean -->
    <bean id="textEditor" class="com.springCore.DIByConstructorsAutowire.TextEditor">
-      <!--<property name="spellChecker" ref="spellChecker"/>-->
-      <!--&lt;!&ndash;referring to the below bean&ndash;&gt;-->
+      <!--&lt;!&ndash;<property name="spellChecker" ref="spellChecker"/>&ndash;&gt;-->
+      <!--&lt;!&ndash;&lt;!&ndash;referring to the below bean&ndash;&gt;&ndash;&gt;-->
    </bean>
 
    <!-- Definition for spellChecker bean -->

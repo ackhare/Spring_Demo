@@ -30,3 +30,16 @@ public class Student {
         throw new IllegalArgumentException();
     }
 }
+
+/*
+Going to setup student profile.
+Name : Zara
+Exception in thread "main" java.lang.IllegalArgumentException
+	at com.springCore.Aop.XmlBased.Student.printThrowException(Student.java:30)
+	at com.springCore.Aop.XmlBased.Student$$FastClassBySpringCGLIB$$921f43aa.invoke(<generated>)
+Student profile has been setup.
+Returning:Zara
+Age : 11
+Exception raised
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+*/
