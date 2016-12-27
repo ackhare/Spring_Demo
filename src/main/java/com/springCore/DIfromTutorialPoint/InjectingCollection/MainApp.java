@@ -25,6 +25,26 @@ Internally the collection is intialkiazed and given values from xml
     }
 }
 /*
+
+
+This is how collection is given
+  <bean id="javaCollection" class="com.springCore.DIfromTutorialPoint.InjectingCollection.JavaCollection">
+
+      <!-- results in a setAddressList(java.util.List) call -->
+      <property name="addressList">
+         <list>
+            <value>INDIA</value>
+            <value>Pakistan</value>
+            <value>USA</value>
+            <value>USA</value>
+         </list>
+      </property>
+
+
+
+
+
+
 List Elements :[INDIA, Pakistan, USA, USA]
 Set Elements :[INDIA, Pakistan, USA]
 Map Elements :{1=INDIA, 2=Pakistan, 3=USA, 4=USA}

@@ -17,3 +17,17 @@ public class MainApp {
         helloWorld.getMessage();
     }
 }
+//
+
+//Hell o world is not directly instantiated but via Hello
+//        WorldConfig where a beanb is defined of its name
+/*
+
+TODO very important
+  @Bean
+    public HelloWorld helloWorld(){
+        return new HelloWorld();
+    }
+
+    Here a @Bean and @Configurationj does complet job and this is very important examplke
+ */

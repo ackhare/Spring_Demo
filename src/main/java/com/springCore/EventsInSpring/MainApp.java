@@ -40,3 +40,12 @@ interface. You can do required housekeep work after receiving this event.
     }
 
 }
+
+
+/*
+Context started event
+
+Basically context events introduced in spring
+
+
+ */

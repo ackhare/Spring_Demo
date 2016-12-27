@@ -1,0 +1,2 @@
+1)@Configuration is generally used with Bean in one file but with @component USED IN A SEPERATE FILE
+2)Injecting interface refrence and dynamic polymorphism important example
