@@ -31,3 +31,16 @@ public class MainApp {
 Inside SpellChecker constructor.
 Inside checkSpelling.
  */
+
+/*
+The intent is autowire via name through xml than using annotation
+Here autowire is included in TextEditor bean because it is
+where injection has to take place   and hasa setter method
+   <bean id="textEditor" class="com.springCore.DIfromTutorialPoint.AutoWiringByName.TextEditor"
+      autowire="byName">
+
+   </bean>
+
+Inside SpellChecker constructor.
+Inside checkSpelling.
+ */

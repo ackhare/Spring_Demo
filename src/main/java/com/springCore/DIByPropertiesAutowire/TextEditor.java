@@ -27,3 +27,11 @@ public class TextEditor {
       spellChecker.checkSpelling();
    }
 }
+
+/*
+
+The intent is DIByPropertiesAutowire
+So when the spellchecker is injected inro texteditor then it is annotated by auto wired and so bean body is not given
+
+
+ */

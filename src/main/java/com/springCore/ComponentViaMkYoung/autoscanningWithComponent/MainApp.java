@@ -22,3 +22,12 @@ public class MainApp {
 
     }
 }
+/*
+intent of this app is to show thae use of dependency injection via no xml through the use of @COmponet , @componentScdan
+and @Configuration
+Here customerDao is injected into customerService
+
+
+output
+CustomerService [customerDAO=Hello , This is CustomerDAO]
+ */

@@ -20,3 +20,12 @@ public class MainApp {
 
     }
 }
+
+/*
+intent of this app is to show thae use of dependency injection via xml and then same app is upgraded to less xml way
+Here customerDao is injected into customerService
+
+
+output
+CustomerService [customerDAO=Hello , This is CustomerDAO]
+ */

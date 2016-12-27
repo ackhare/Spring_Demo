@@ -20,6 +20,11 @@ public class MainApp {
       context.registerShutdownHook();
    }
 }
+
+/*
+
+The intent of this demo is that to show use of bean's init-method and destroy method capability
+ */
 /*
 Bean is going through init.
 Your Message : Hello World!

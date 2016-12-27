@@ -25,3 +25,10 @@ public class MainApp {
       te.spellCheck();
    }
 }
+
+/*
+
+The intent of this app is to show autowiring by constructor
+Here spelcheckjer is passed into constructor of text editor while beans are created in xml fil;e without use o0f ref or any property
+so basically through autowiring body of bean is not given
+ */

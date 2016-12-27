@@ -26,8 +26,18 @@ public class MainApp {
 
 
 /*
-log4j:WARN No appenders could be found for logger (org.springframework.core.env.StandardEnvironment).
-log4j:WARN Please initialize the log4j system properly.
+Sequence of output
+
+
+postProcessBeforeInitialization() method
+init()
+postProcessAfterInitialization
+destroy()
+
+
+Final output
+
+
 BeforeInitialization : helloWorld
 Bean is going through init.
 AfterInitialization : helloWorld

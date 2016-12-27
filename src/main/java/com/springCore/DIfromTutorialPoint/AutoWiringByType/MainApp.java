@@ -25,6 +25,27 @@ public class MainApp {
       te.spellCheck();
    }
 }
+
+
+/*
+
+/*
+The intent is autowire via type through xml than using annotation
+Here autowire is included in TextEditor bean because it is
+where injection has to take place   and has a setter where argument has to be put
+t
+
+   <!-- Definition for textEditor bean -->
+   <bean id="textEditor" class="com.springCore.DIfromTutorialPoint.AutoWiringByType.TextEditor"
+      autowire="byType">
+      <!--<property name="spellChecker" ref="SpellChecker" />-->
+      <!--<property name="name" value="Generic Text Editor" />-->
+   </bean>
+
+Inside SpellChecker constructor.
+Inside checkSpelling.
+ */
+
 /*
 Inside SpellChecker constructor.
 Inside checkSpelling.

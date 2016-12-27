@@ -16,5 +16,13 @@ public class CDPlayerMain {
     }
 }
 /*
+Intent of this demo is autrowiring by setter methods
+SgtPeppers is injected into CDPlayer class(through autowiring) so that when it can be used
+Interface is just used for demo
+
+ */
+
+
+/*
 Playing Billie Jean! by Michael Jackson
  */

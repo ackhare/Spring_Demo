@@ -4,8 +4,10 @@ package com.springCore.BeanPostProcessor;
  * Created by chetan on 16/12/16.
  */
 /*
-This is very basic example of implementing BeanPostProcessor, which prints a bean name before and after initialization
-of any bean. You can implement more complex logic before and after instantiating a bean because you have access on bean
+This is very basic example of implementing BeanPostProcessor, which prints a
+bean name before and after initialization
+of any bean.
+You can implement more complex logic before and after instantiating a bean because you have access on bean
 object inside both the post processor methods.
  */
 
