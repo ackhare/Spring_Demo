@@ -16,3 +16,6 @@ public class MainApp {
       te.spellCheck();
    }
 }
+/*
+The intent is to introduce @Resource annotation which do not belong to sapring but jsr
+ */

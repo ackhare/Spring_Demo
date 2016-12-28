@@ -16,7 +16,7 @@ public class MainApp {
 
       HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
       obj.getMessage();
-      //method is availble with AbstractApplicationContext and not with ApplicationContext
+      //Todo method is availble with AbstractApplicationContext and not with ApplicationContext
      // This will ensures a graceful shutdown and calls the relevant destroy methods.
       context.registerShutdownHook();
    }

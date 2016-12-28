@@ -31,3 +31,16 @@ public class MainApp {
     }
 }
 
+/*
+The intent is to show how to use a config file which decrypts above line
+
+ CompactDisc player = context.getBean(CompactDisc.class);
+
+ So direct SgtPeppers is called
+ This example does not makes use of MediaPlayer package whi is being used in MainApp2 because this config does not shows any
+ CDPlayer here
+
+
+
+ */
+

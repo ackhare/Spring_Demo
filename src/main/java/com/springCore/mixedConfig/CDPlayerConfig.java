@@ -10,6 +10,15 @@ import org.springframework.context.annotation.Import;
 @Import(CDConfig.class)
 public class CDPlayerConfig {
 
+
+    /*
+   This will get auto imported
+
+      @Bean
+  public CompactDisc compactDisc() {
+    return new SgtPeppers();
+  }
+     */
     @Bean
     public CDPlayer cdPlayer(CompactDisc compactDisc) {
         return new CDPlayer(compactDisc);

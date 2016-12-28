@@ -1,2 +1,20 @@
 1)@Configuration is generally used with Bean in one file but with @component USED IN A SEPERATE FILE
 2)Injecting interface refrence and dynamic polymorphism important example
+package com.springCore.javaConfig;
+3)Through @configuration and @ Beran you can satisfy dependencvies see -->
+package com.springCore.javaConfigs.javaBasedConfiguration; and complete dependency
+
+com.springCore.javaConfigs.JavaBasedConfigToInjectMultipleConfig;
+
+4)easy to do constructor injection through @bean
+
+5)The Resource annotation marks a resource that is needed by the application.
+  This annotation may be applied to an  application component class, or to fields or methods of the
+  component class.  When the annotation is applied to a
+   todo )field or method, the container will inject an instance( mucch like @Bean)
+   of the requested resource into the application component
+   todo when the component is initialized.
+
+    If the annotation is
+     applied to the component class, the annotation declares a
+     resource that the application will look up at runtime. <p>

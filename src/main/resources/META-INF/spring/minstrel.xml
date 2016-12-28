@@ -25,9 +25,12 @@
 
         <!--//aspect&ndash;&gt; A module which has a set of APIs providing cross-cutting requirements.-->
         <aop:aspect ref="minstrel">
+            <!--referring to above bean with id ministerel-->
             <!--//You can specify pointcuts using expressions or patterns as we will see in our AOP examples.-->
             <aop:pointcut id="embark"
                           expression="execution(* *.embarkOnQuest(..))"/>
+
+            <!--Below joinpoints are referring to pointcut wioth id embark so -->
             <!--//so method singBeforeQuest will fire before embarkOnQuest-->
             <aop:before pointcut-ref="embark"
                         method="singBeforeQuest"/>

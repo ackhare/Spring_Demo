@@ -23,3 +23,10 @@ public class MainApp {
         profile.printName();
     }
 }
+/*
+
+intent
+
+//There may be a situation when you create more than one bean of the same type and
+// want to wire only one of them with a property,
+ */

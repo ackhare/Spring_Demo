@@ -28,3 +28,12 @@ public class MainApp1 {
     }
 }
 
+/*
+
+The intent is to use a diffrent config file which extends the base config file CDConfig
+This example makes use of Media player package  and because compact disc is injected into CD Player the base config is usded
+to decipher that
+The first main and this main making use of same CDconfig but they are injecting bean at diffrent placers for compact disfc
+
+
+ */

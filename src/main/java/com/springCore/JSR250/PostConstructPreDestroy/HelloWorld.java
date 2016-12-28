@@ -12,15 +12,17 @@ public class HelloWorld {
     public void setMessage(String message) {
         this.message = message;
     }
-/*
-You can use @PostConstruct annotation as an alternate of initialization callback and @PreDestroy annotation as an
-alternate of destruction callback as explained in the below example.
- */
+
+    /*
+    You can use @PostConstruct annotation as an alternate of initialization callback and @PreDestroy annotation as an
+    alternate of destruction callback as explained in the below example.
+     */
     public String getMessage() {
         System.out.println("Your Message : " + message);
         return message;
     }
 
+    //TODO the advantage of this approach is that you do not have to extyend or implement anything for init or destroy
     @PostConstruct
     public void init() {
         System.out.println("Bean is going through init.");

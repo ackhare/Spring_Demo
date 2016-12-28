@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class CDConfig {
   //here it is creating a bean which could be injected
 
+ // Now Compact disc is being Autowired in CDPlayer which returns SgtPeppers
   @Bean
   public CompactDisc compactDisc() {
     return new SgtPeppers();
