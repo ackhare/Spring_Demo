@@ -29,4 +29,8 @@ intent
 
 //There may be a situation when you create more than one bean of the same type and
 // want to wire only one of them with a property,
+ What is happening we have created two instances of student and given only     @Qualifier("student1")
+ with student 1 so that is whose age and other property will be printed
+
+
  */

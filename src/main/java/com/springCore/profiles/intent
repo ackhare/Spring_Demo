@@ -1,0 +1,2 @@
+The intent of this app is to use a @Bean with @Profile which
+ will help with diffrentiating user profile or diffrent enviournment

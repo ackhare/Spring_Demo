@@ -14,8 +14,7 @@
    <bean id="student" class="com.springCore.useOfRequiredAnnotation.Student">
       <property name="name"  value="Zara" />
   <property name="age"  value="11" />
-      <!-- try without passing age and check the result -->
-      <!-- property name="age"  value="11"-->
+
    </bean>
 
 </beans>

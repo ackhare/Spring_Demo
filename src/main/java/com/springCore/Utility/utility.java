@@ -8,6 +8,7 @@ import java.util.Properties;
 /**
  * Created by chetan on 19/12/16.
  */
+//TODO need of this class has faded because putting anything directly under resoiurces puts it directly on class path
 public class utility {
 
     public static void  loadLogger()

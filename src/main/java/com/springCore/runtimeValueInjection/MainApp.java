@@ -17,3 +17,22 @@ public class MainApp {
         context.close();
     }
 }
+
+/*
+The intent of this app is to change valuie of a bean via properties file
+you do not even have to touch the code or xml , just change the appp.properties file which should be provided
+in xml config
+
+The xml configuration would be
+
+
+
+  <context:property-placeholder
+    location="META-INF/runtimeValueInjection/app.properties" />
+
+  <bean class="com.springCore.runtimeValueInjection.BlankDisc"
+    c:_0 = "${disc.title}"
+    c:_1 = "${disc.artist}"/>
+
+
+ */

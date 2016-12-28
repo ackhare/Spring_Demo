@@ -42,4 +42,15 @@ Now blankdisc needs 3 argument
         context.close();
     }
 }
+/*
+The intent of this app is that to use a xml file as a helper resource and declare it as a part of a java config file
+@ImportResource("classpath:META-INF/mixedConfig/cd-config.xml")
+
+The file in itself contains a list which is injected into a list to BlankDisc which
+has a constructor for that purpsoie
+
+All the below arguments are injected
+  public BlankDisc(String title, String artist, List<String> tracks)
+
+ */
 
