@@ -16,7 +16,8 @@ dependencies {
     compile("org.springframework:spring-context:${springVersion}")
     compile("org.aspectj:aspectjweaver:${aspectJVersion}")
     compile("mysql:mysql-connector-java:5.1.13")
-    compile("log4j:log4j:${log4jVersion}")
+//    compile("log4j:log4j:${log4jVersion}")
+    compile 'ch.qos.logback:logback-classic:1.1.3'
     compile("org.springframework:spring-jdbc:${springVersion}")
     compile("com.h2database:h2:${h2Version}")
     //below two dependencies required for aop
@@ -27,6 +28,7 @@ dependencies {
     testCompile("org.mockito:mockito-core:${mockitoVersion}")
     testCompile("org.springframework:spring-test:${springVersion}")
     testCompile "com.github.stefanbirkner:system-rules:${systemRulesVersion}"
+    compile 'org.slf4j:jcl-over-slf4j:1.7.22'
 }
 
 jar {
