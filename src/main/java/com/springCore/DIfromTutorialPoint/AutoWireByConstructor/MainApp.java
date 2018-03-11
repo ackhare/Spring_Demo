@@ -20,7 +20,8 @@ and it has a constructor with
 one of the arguments of SpellChecker type,
 Spring looks for a bean definition named SpellChecker, and uses it to set the
 constructor's argument.
-Still you can wire remaining arguments using <constructor-arg> tags. Following example will
+Still you can wire remaining arguments using <constructor-arg> tags.
+Following example will
 illustrate the concept.
  */
 public class MainApp {

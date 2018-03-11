@@ -15,8 +15,8 @@ illustrate the concept.
  */
 
 /*
-So oreignally we needed to refrence spellchecked explicitly but now we need to do autowire by name and it will search
-a property of spellchecker in texteditor with a setter method
+So orignally we needed to refrence spellchecked explicitly but now we need to do autowire by name and
+ it will search a property of spellchecker in texteditor with a setter method
  */
 public class MainApp {
    public static void main(String[] args) {

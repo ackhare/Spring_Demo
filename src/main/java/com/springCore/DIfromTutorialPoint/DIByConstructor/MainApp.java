@@ -8,7 +8,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
  */
 public class MainApp {
    public static void main(String[] args) {
-      ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/DIfromTutorialPoint/DIByConstructor/Beans.xml");
+      ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/IdeaProjects/Spring_Demo/src/main/java/com/springCore/DIfromTutorialPoint/DIByConstructor/Beans.xml");
 
       TextEditor te = (TextEditor) context.getBean("textEditor");
 //here it will go to xml and check for spellcheck instance

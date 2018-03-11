@@ -26,7 +26,7 @@ TODO easy to do constructor injection through @bean
      */
     @Bean
     public TextEditor textEditor(){
-        return new TextEditor( spellChecker() );
+        return new TextEditor(spellChecker() );
     }
 
     //This will be inviked when spellchecker is injected into TextEditor

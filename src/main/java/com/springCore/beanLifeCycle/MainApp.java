@@ -10,7 +10,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class MainApp {
    public static void main(String[] args) {
 
-      AbstractApplicationContext context =     new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/beanLifeCycle/Beans.xml");
+      AbstractApplicationContext context =     new FileSystemXmlApplicationContext("//home/chetan/IdeaProjects/Spring_Demo/src/main/java/com/springCore/beanLifeCycle/Beans.xml");
 
       HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
       obj.getMessage();

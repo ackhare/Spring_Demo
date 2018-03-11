@@ -1,4 +1,5 @@
-1)@Configuration is generally used with Bean in one file but with @component USED IN A SEPERATE FILE
+1)@Configuration is generally used with Bean in one file but with @component
+USED IN A SEPERATE FILE
 2)Injecting interface refrence and dynamic polymorphism important example
 package com.springCore.javaConfig;
 3)Through @configuration and @ Beran you can satisfy dependencvies see -->

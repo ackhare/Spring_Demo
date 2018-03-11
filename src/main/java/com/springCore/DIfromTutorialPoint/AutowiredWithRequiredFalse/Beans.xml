@@ -11,7 +11,7 @@
    <context:annotation-config/>
 
    <!-- Definition for student bean -->
-   <bean id="student" class="com.springCore.AutowiredWithRequiredFalse.Student">
+   <bean id="student" class="com.springCore.DIfromTutorialPoint.AutowiredWithRequiredFalse.Student">
       <property name="name"  value="Zara" />
   <!--<property name="age"  value="11" />-->
 
