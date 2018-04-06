@@ -15,7 +15,7 @@ BeanInitializationException exception. Below is an example to show the use of @R
  */
 public class MainApp {
     public static void main(String[] args) {
-        ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/useOfQualifierAnnotation/Beans.xml");
+        ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/IdeaProjects/Spring_Demo/src/main/java/com/springCore/useOfQualifierAnnotation/Beans.xml");
 
         Profile profile = (Profile) context.getBean("profile");
 

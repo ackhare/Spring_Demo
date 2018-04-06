@@ -17,5 +17,6 @@ public class MainApp {
    }
 }
 /*
-The intent is to introduce @Resource annotation which do not belong to sapring but jsr
+The intent is to introduce @Resource annotation which do not belong
+to sapring but jsr
  */

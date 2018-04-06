@@ -20,7 +20,7 @@ So orignally we needed to refrence spellchecked explicitly but now we need to do
  */
 public class MainApp {
    public static void main(String[] args) {
-      ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/DIfromTutorialPoint/AutoWiringByName/Beans.xml");
+      ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/IdeaProjects/Spring_Demo/src/main/java/com/springCore/DIfromTutorialPoint/AutoWiringByName/Beans.xml");
 
       TextEditor te = (TextEditor) context.getBean("textEditor");
 //here it will go to xml and check for spellcheck instance

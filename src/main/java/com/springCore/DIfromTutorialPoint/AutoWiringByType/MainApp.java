@@ -18,7 +18,7 @@ a property of spellchecker in texteditor with type SpellChecker which ofcourse i
  */
 public class MainApp {
    public static void main(String[] args) {
-      ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/Downloads/Spring-Core-master/src/main/java/com/springCore/DIfromTutorialPoint/AutoWiringByType/Beans.xml");
+      ApplicationContext context = new FileSystemXmlApplicationContext("//home/chetan/IdeaProjects/Spring_Demo/src/main/java/com/springCore/DIfromTutorialPoint/AutoWiringByType/Beans.xml");
 
       TextEditor te = (TextEditor) context.getBean("textEditor");
 //here it will go to xml and check for spellcheck instance
