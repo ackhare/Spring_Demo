@@ -11,8 +11,14 @@ public class CircularDependencyB {
 
     private CircularDependencyA circA;
 
+    private String message = "Hi!";
+
     @Autowired
-    public CircularDependencyB(CircularDependencyA circA) {
+    public void setCircA(CircularDependencyA circA) {
         this.circA = circA;
+    }
+
+    public String getMessage() {
+        return message;
     }
 }

@@ -13,7 +13,11 @@ public class CircularDependencyA {
     private CircularDependencyB circB;
 
     @Autowired
-    public CircularDependencyA(@Lazy CircularDependencyB circB) {
+    public void setCircB(CircularDependencyB circB) {
         this.circB = circB;
+    }
+
+    public CircularDependencyB getCircB() {
+        return circB;
     }
 }
