@@ -11,15 +11,15 @@ import org.springframework.context.annotation.Bean;
  * Created by chetan on 6/4/18.
  */
 public class Main {
-    @Bean
-    public CircularDependencyA getCircularDependencyA() {
-        return new CircularDependencyA();
-    }
-
-    @Bean
-    public CircularDependencyB getCircularDependencyB() {
-        return new CircularDependencyB();
-    }
+//    @Bean
+//    public CircularDependencyA getCircularDependencyA() {
+//        return new CircularDependencyA();
+//    }
+//
+//    @Bean
+//    public CircularDependencyB getCircularDependencyB() {
+//        return new CircularDependencyB();
+//    }
     public static void main(String[] args) {
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(TestConfig.class);
